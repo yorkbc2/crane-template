@@ -98,6 +98,11 @@
       flex: 1;
     }
   }
+
+  .form-column-and-row {
+    display: flex;
+    flex-direction: column;
+  }
   
   .form-field {
     flex: 1;
@@ -320,3 +325,44 @@
     }
   }
 }
+
+@media screen and (max-width: $adaptiveDesignWidth) {
+  .form {
+    &.form-weighing { 
+      .form---row {
+        flex-direction: row;
+         > *{
+          flex: 1;
+         }
+         > input {
+          min-width: 100px;
+         }
+         >label {
+          line-height: 350%;
+         } 
+      }
+      .form-field {
+        &.form-field-big {
+          font-size: 28px;
+        }
+      }
+      .form-label {
+        &.form-label-big  {
+          font-size: 18px;
+          margin: 5px 0;
+        } 
+      }
+    }
+    .form-column-and-row {
+      flex-direction: row;
+      >div {
+        margin: 0 2px!important;
+      }
+      > div input,
+      > div button {
+        padding: 7px 10px;
+        margin: 0 !important;
+      }
+    }
+  }
+}   

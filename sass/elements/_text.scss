@@ -155,7 +155,7 @@ span.checkmark {
   color: red;
 } 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $adaptiveDesignWidth) {
   .icon {
     width: 15px;
     height: 15px;

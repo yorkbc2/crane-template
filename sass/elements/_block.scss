@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: $adaptiveDesignWidth) {
   .block {
     width: 100%;
     .block-content {

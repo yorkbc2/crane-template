@@ -111,7 +111,7 @@
 
 } 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
   .aside {
     position: fixed;
     width: 100%;
@@ -163,7 +163,7 @@
       text-align: left;   
       z-index: 20;
       .aside-button {
-        display: inline-block;   
+        display: inline-block;    
         width: 28px; 
         padding: 0px;
         transition: transform 0.3s ease-in-out;
