@@ -1,0 +1,193 @@
+.aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 140px;
+  min-height: 100%; 
+  
+  
+  background-color: $asideBG;
+  
+  &.aside-opened {
+    .aside-elements {
+      
+    }
+  }
+  
+  .aside-elements {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .aside-profile {
+    position: relative; 
+    padding: 20px 25px;
+    
+    color: #fff;
+    text-align: center;
+    
+    background-color: $asideProfileBG;
+    
+    span {
+      line-height: 150%;
+    }
+  } 
+  
+  .aside-button-container {
+    .aside-button {
+      @include clean-button($asideMenuBarColor, block);
+      width: 100%;
+      padding: 25px 0;
+      
+      text-align: center;
+      i.aside-button-bar {
+        position: relative;
+        
+        display: block;
+        width: 28px;
+        height: 2px;
+        margin: 0 auto 5px auto;
+        
+        background-color: $asideMenuBarColor;
+        
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  
+  .aside-line {
+    position: relative;
+    display: block;
+    
+    margin: 10px auto;
+    width: 25px;
+    height: 2px;
+    background-color: $asideLineBGColor;
+  }
+  
+  .aside-menu-element {
+    @include clean-button($asideMenuBarColor);
+    padding: 15px 10px;
+    
+    &.aside-menu-element-last {
+      border-top: 1px solid $asideLastElementBorderColor;
+    }
+    
+    .aside-svg {
+      display: block;
+      margin: 10px auto;
+      max-width: 50px;
+    }
+    
+    &.aside-menu-element-active {
+      background-color: $asideElementBGHover;
+      .aside-svg {
+        stroke: $asideProfileBG;
+      }
+    }
+      
+    span {
+      color: #fff;
+      text-transform: none;
+      font-weight: normal;
+    }
+
+  }
+
+} 
+
+@media screen and (max-width: 720px) {
+  .aside {
+    position: fixed;
+    width: 100%;
+    z-index: 1; 
+    height: 60px;
+    min-height: 60px;
+    background-color: $bodyBGColor;
+    
+    &.aside-opened {
+      .aside-elements {
+        left: 0px;
+      }
+      .aside-button-container {
+        .aside-button {
+          .aside-button-bar {
+              position: absolute;   
+              top: -5px; 
+              &:first-child {
+                transform: rotate(45deg); 
+              }
+              &:last-child {
+                transform: rotate(-45deg); 
+              }
+              &:nth-child(2) {
+                display: none; 
+              }
+          }
+        }
+      }  
+    }
+    
+    .aside-elements { 
+      position: fixed;
+      top: 55px;
+      left: -100%;  
+      width: 200px; 
+      height: 100%;  
+      transition: left 0.3s ease-in-out;
+      
+      background-color: $asideMobileBG;
+    } 
+    .aside-button-container {
+      position: absolute;
+      padding: 0px;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      padding: 20px 20px;  
+      text-align: left;   
+      z-index: 20;
+      .aside-button {
+        display: inline-block;   
+        width: 28px; 
+        padding: 0px;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

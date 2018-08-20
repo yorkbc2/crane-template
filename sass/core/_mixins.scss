@@ -1,0 +1,11 @@
+@mixin clean-button ($color: #111, $display: inline-block) {
+  position: relative;
+  display: $display;
+  
+  background-color: transparent;
+  color: $color;
+  border: 0;
+  
+  cursor: pointer;
+  outline: none;
+}

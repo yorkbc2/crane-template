@@ -1,0 +1,82 @@
+// The entry point of SASS styles
+@font-face {
+  font-family: "Digital Counter";
+  src: url('../fonts/digital_counter_7.ttf');
+}
+@import 'core/variables';
+@import 'core/mixins'; 
+::-webkit-scrollbar {
+ width: 6px;
+ background-color: transparent;
+}   
+
+::-webkit-scrollbar-button {
+ display: none;
+}
+
+::-webkit-scrollbar-thumb { 
+ background-color: $secondColor;
+ width: 2px;
+}
+  
+::-webkit-scrollbar-track {  
+ width: 5px;
+ background-color: #acaeb6;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  
+  background-color: $bodyBGColor;
+  color: $bodyFontColor;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+
+  &.y-disabled {
+    overflow-y: hidden;
+  }
+
+  &.with-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/background.jpg');
+  }
+}
+
+fieldset {
+  border: 1px solid #4e6291;  
+  display: flex; 
+  flex: 1;  
+  padding: 10px;    
+  border-radius: 2px;  
+  box-shadow: none;  
+}
+
+.wrapper {
+  padding-left: 160px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+@import 'elements/text';
+@import 'elements/buttons';
+@import 'elements/forms';
+@import 'elements/tables';
+@import 'elements/modal';
+@import 'elements/block';
+@import 'elements/card';
+@import 'elements/aside';
+@import 'elements/loading';
+@import 'elements/lists';

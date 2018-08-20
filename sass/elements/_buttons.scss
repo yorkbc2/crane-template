@@ -1,0 +1,169 @@
+button {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  padding: 14px 25px;
+  margin-bottom: 10px;   
+  
+  color: $buttonFontColor;
+  
+  font-size: 12px;
+  background-color: $buttonBGColor;
+  border: 0px;
+  border-radius: $buttonBorderRadius;
+
+  &.button-single {
+    margin-bottom: 0px;
+  }
+  
+  img {
+    width: 15px;
+    height: 15px;
+    transform: translateY(15%);
+  }
+
+  &:hover {
+    background-color: $buttonBGColorHover;
+  }
+  &:active {
+    background-color: $buttonBGColorActive;  
+  }
+   
+  &.button-primary {
+    background-color: $buttonBGPrimaryColor;
+    padding: 14px 15px;
+    border: 1px solid $buttonPrimaryBorderColor;
+    border-radius: $buttonBorderRadius; 
+    &:hover {
+      background-color: $buttonBGPrimaryColorHover;
+    }
+  }
+  
+  &.button-orange {
+    background-color: $buttonBGAnotherColor;
+    
+    &:hover {
+      background-color: $buttonBGAnotherColorHover;
+    }
+    
+    &:active {
+      background-color: $buttonBGAnotherColorActive;
+    }
+  }
+}
+
+.link-button {
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 10px;    
+  padding: 14px 25px;
+
+  color: $linkButtonFontColor;
+  
+  &.link-button-upper {
+    text-transform: uppercase;
+  }
+  
+  &.link-button-trash,
+  &.link-button-edit {
+    &::before {
+      content: ""; 
+      position: absolute; 
+      left: 0px;
+      top: 12px;
+      
+      display: block;
+      width: 16px;
+      height: 16.5px;
+      
+      background-size: cover;
+    }
+  }
+  
+  &.link-button-trash {
+    position: relative; 
+    padding-left: 25px; 
+    &::before {     
+      width: 14px;  
+      background-image: url('../icons/trash.svg');
+    }
+  }
+  
+  &.link-button-edit {
+    position: relative; 
+      
+    padding-left: 25px;
+    
+    &::before {
+      background-image: url('../icons/button-edit-pencil.svg');
+    }
+  }
+  
+  &:hover {
+    color: $linkButtonFontColorHover;
+  }
+  &:active {
+    color: $linkButtonFontColorActive;
+  }
+}
+
+.button-group {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+  &.button-group-offseted {
+    margin-bottom: 20px;
+  }
+  
+  &.button-group-elements-unflex {
+    justify-content: flex-start;
+    >button {
+      flex: none;
+    }
+  }
+   
+  > button {
+    flex: 1;   
+    margin-right: 5px; 
+    &:last-child {
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+  }  
+}
+
+@media screen and (max-width: 720px) {
+  .button-group {
+    &.button-group-mobile-column {
+      flex-direction: column;
+      >button {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    }
+    &.button-group-elements-unflex {
+//      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    >button {
+      &:last-child {
+        margin-left: 0px;
+      }
+    }
+  }
+}

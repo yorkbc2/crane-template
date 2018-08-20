@@ -1,0 +1,73 @@
+$bodyBGColor: #2c3752;
+$bodyFontColor: #fff;
+
+$firstColor: #1875f0;
+$secondColor: #f09318;
+
+$buttonBGColor: #1875f0;
+$buttonBGColorHover: #3b89f0;
+$buttonBGColorActive: #1463cc;
+$buttonBGAnotherColor: #f09318;
+$buttonBGAnotherColorHover: #f09c2d;
+$buttonBGAnotherColorActive: #db8616;
+$buttonBGPrimaryColor: #42537b;
+$buttonPrimaryBorderColor: #4e6291;
+$buttonBGPrimaryColorHover: lighten($buttonBGPrimaryColor, 10%);
+$buttonFontColor: #fff;
+$buttonBorderRadius: 4px;
+$buttonFontSize: 12px;
+
+$linkButtonFontColor: #fff; 
+$linkButtonFontColorHover: #1875f0;
+$linkButtonFontColorActive: #f09318;
+
+$fontSizeNormal: 16px;
+
+$tableHeaderBG: #42537b;
+$tableHeaderFontColor: #fff;
+$tableHeaderBorderRadius: 5px;
+
+$tableCellBG: #fff;
+$tableCellBGHover: #e7eef8;
+$tableCellBorderColor: #e3e5eb;
+$tableCellFontColor: #111;
+$tableContainerBG: #384668;
+
+$blockContentBG: #384668;
+
+$formLabelIconBG: #42537b;
+$formInputSuccessColor: #62c914;
+$formInputBigBorderColor: #42537b;
+
+$firstFont: "Montserrat", sans-serif;
+$secondFont: "Montserrat Alternates", sans-serif;
+
+$asideBG: #121930;
+$asideMenuBarColor: #a1a1bd;
+$asideProfileBG: #1875f0;
+$asideLineBGColor: #fff;
+$asideElementBGHover: #2c3752;
+$asideLastElementBorderColor: #363b53;
+$asideMobileBG: #121930;
+
+$captionSuccessColor: #62c914;
+$captionProgressColor: #f09318;
+$captionDangerColor: #ff0113;
+
+$cardHeaderBG: #42537b;
+$cardBorderRadius: 5px;
+$cardContentBG: #384668;
+
+$sectionHeaderColor: #777c8a;
+
+$modalWindowBG: rgba(26, 32, 46, 0.9);
+$modalBlockBG: #384668;
+$modalBlockBorderRadius: 5px;
+
+$loadingCircleBG: #42537b;
+$loadingCircleDefault: #1875f0;
+$loadingCircleWarning: #f09318;
+
+$togglerDefaultBG: #42537b;
+$togglerActiveBG: #f09318;
+$togglerBorderColor: #384668;
