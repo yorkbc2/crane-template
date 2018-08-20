@@ -327,9 +327,29 @@
 }
 
 @media screen and (max-width: $adaptiveDesignWidth) {
+  .lh {
+    label {
+      line-height: 250%!important;
+    }
+  }
+  .im-tired {
+    input {
+      padding: 5px!important;
+      font-size: 20px;
+    }
+  }
   .form {
+    &.form-small-inputs {
+      label {
+        margin: 0!important;
+      }
+      input {
+        padding: 5px!important;
+        font-size: 12px!important;
+      }
+    }
     &.form-weighing { 
-      .form---row {
+      .form---row { 
         flex-direction: row;
          > *{
           flex: 1;
@@ -337,19 +357,19 @@
          > input {
           min-width: 100px;
          }
-         >label {
-          line-height: 350%;
-         } 
+         >label { 
+          line-height: 350%;  
+         }   
       }
       .form-field {
-        &.form-field-big {
+        &.form-field-big { 
           font-size: 28px;
         }
       }
       .form-label {
         &.form-label-big  {
           font-size: 18px;
-          margin: 5px 0;
+          margin: 5px 0; 
         } 
       }
     }

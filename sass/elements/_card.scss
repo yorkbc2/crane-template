@@ -127,14 +127,25 @@
 @media screen and (max-width: 480px) {
   .card-row { 
 
+    &.card-row-reverse {
+      flex-direction: column-reverse;
+
+      .card {
+        margin-bottom: 0px!important;
+      }
+    }
+
     &.card-weighing {
       flex-direction: column;
 
       .card {
-        margin-bottom: 4px;
+        margin-bottom: 0px!important;
+        >.card-footer {
+         padding: 5px 0; 
+        }
       }
     }
   }
 
   
-} 
+}  

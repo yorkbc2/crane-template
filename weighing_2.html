@@ -95,7 +95,7 @@
        Вибір обладнання > Зважування   
      </h5>   
      
-     <div class="card-row">
+     <div class="card-row card-weighing">
        <div class="card card-premedium"> 
          <div class="card-preheader text-left">
            <h2>Кран КР 24-15</h2>
@@ -104,16 +104,20 @@
            Позиція
          </div> 
          <div class="card-content">  
-           <form class="form">  
-             <div class="form-row">
-                 <label class="text-left" for="coord_x">Координата Х:</label>
-                 <input type="text" name="coord_x" class="form-field form-field-right" value="210">
+           <form class="form form-small-inputs form-weighing">  
+             
+             <div class="form-column-and-row">
+                <div class="form-row">
+                   <label class="text-left" for="coord_x">Координата Х:</label>
+                   <input type="text" name="coord_x" class="form-field form-field-right" value="210">
+               </div>
+               <div class="form-row">
+                   <label class="text-left" for="coord_y">Координата Y:</label>
+                   <input type="text" name="coord_y" class="form-field form-field-right" value="100">
+               </div>
              </div>
-             <div class="form-row">
-                 <label class="text-left" for="coord_y">Координата Y:</label>
-                 <input type="text" name="coord_y" class="form-field form-field-right" value="100">
-             </div>
-             <div class="form-row">
+             <br>
+             <div class="form-row form---row lh">
                  <label class="text-left" for="cell">Комірка:</label>
                  <input type="text" name="cell" class="form-field form-field-right" value="R-21-1">
              </div>
@@ -121,15 +125,15 @@
          </div>
        </div> 
        <div class="card card-medium"> 
-         <div class="card-preheader text-left">
+         <div class="card-preheader text-left mobile-hide">
            <h2>Ваги 1</h2>
          </div>  
          <div class="card-header">
            Зважування
          </div>
          <div class="card-content">
-           <form action="" class="form">
-             <div class="form-row">
+           <form action="" class="form form-weighing">
+             <div class="form-row form---row im-tired">
                <label for="weight" class="form-label form-label-big">
                  Вага, кг:
                </label>
@@ -143,7 +147,7 @@
              </div>
            </form>
          </div>
-         <div class="card-footer text-right">
+         <div class="card-footer text-right mobile-hide">
            <button type="button" class="link-button link-button-upper">
              <img src="static/icons/arrow-left.svg" width="15px" height="12px" /> &nbsp; Повернутися до вибору обладнання
            </button>
