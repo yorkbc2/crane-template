@@ -4,6 +4,10 @@
   border-radius: 3px;
 }
 
+.small-paddings {
+  padding: 5px;
+}
+
 .small-cell {
   max-width: 165px;
   min-width: 165px;
@@ -100,8 +104,8 @@
   } 
 @media screen and (max-width: 920px) {
   .small-cell {
-    min-width: 60px;
-    max-width: 60px;
+    min-width: 35px;
+    max-width: 35px;
   }
   .mobile {
     display: table-cell;
