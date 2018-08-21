@@ -69,7 +69,7 @@ fieldset {
   }
   .es-mobile {
     display: block;
-    height: 10px;
+    height: 10px; 
     width: 100%;
   }
 } 
@@ -86,3 +86,4 @@ fieldset {
 @import 'elements/aside';
 @import 'elements/loading';
 @import 'elements/lists';  
+@import 'bad-fixing';   

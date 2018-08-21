@@ -1,0 +1,93 @@
+// If you will work with this, please understand me 
+// I can't work with this people, because during last 12 hours the edit template over 100 times
+// I just want to write some code and end this project
+// If you want to talk: alex.thesmithsfan@gmail.com
+// Goodbye
+
+.card {
+	&.card-minh {
+		> .card-content {
+			min-height: 200px;
+
+			> form {
+				> .form-row {
+					&.form---row {
+						flex-direction: row;
+					}
+				}
+			}
+		}
+	}
+} 
+
+@media screen and (max-width: 1066px) {
+	.card {
+		&.card-minh {
+			> .card-content {
+				> form {
+					> .form-row {
+						&.form---row {
+							> * {
+								flex: 1;
+							}
+							>input {
+								max-width: 50%;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@media screen and (max-width: 1030px) {
+	.card {
+		&.card-minh {
+			flex: 1!important;
+		}
+	} 
+} 
+
+@media screen and (max-width: 720px) {
+	.card {
+		&.card-minh {
+			> .card-content {
+				min-height: 100px;
+			}
+			form.form {
+				.form-column-and-row {
+					flex-direction: column!important;
+				}
+				
+			}
+			.button-group {
+				margin-top: 27px!important;
+			}
+		}
+	} 
+} 
+
+@media screen and (max-width: 530px) {
+	.card {
+		&.card-minh {
+			> .card-content {
+				min-height: 250px;
+				padding: 5px;
+			}
+			form.form {
+				&.form-weighing {
+					.form-row {
+						flex-direction: column!important;
+						>input {
+							max-width: 100%;
+						}
+					}
+				}	
+			}
+			.button-group {
+				margin-top: 27px!important;
+			}
+		}
+	} 
+}  
