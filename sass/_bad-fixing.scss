@@ -48,7 +48,7 @@
 		}
 	} 
 } 
-
+ 
 @media screen and (max-width: 720px) {
 	.card {
 		&.card-minh {
@@ -68,10 +68,21 @@
 	} 
 } 
 
+@media screen and (max-width: 680px) {
+	.card-row.card-rrrow {
+		flex-direction: column!important; 
+
+		>.card {
+			margin-bottom: 5px!important;
+			max-width: 100%!important;
+		}
+	}
+}
+ 
 @media screen and (max-width: 530px) {
 	.card {
-		&.card-zxc {
-			.form-row {
+		&.card-zxc { 
+			.form-row  {
 				&.form-oof {
 					margin-top: 25px!important;
 				}
