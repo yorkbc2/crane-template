@@ -70,18 +70,40 @@
 
 @media screen and (max-width: 530px) {
 	.card {
+		&.card-zxc {
+			.form-row {
+				&.form-oof {
+					margin-top: 25px!important;
+				}
+			}	
+			.button-group { 
+				margin-top: 30px!important;
+			}
+		}
+
 		&.card-minh {
 			> .card-content {
-				min-height: 250px;
+				min-height: 250px; 
 				padding: 5px;
 			}
 			form.form {
-				&.form-weighing {
+				&.form-zxc {
+					input {
+						padding: 20px 12px;
+						margin-top: 30px!important;
+						margin-bottom: 25px!important;
+						font-size: 18px;
+					}
+					.button-group {
+						margin-top: 30px!important;
+					}
+				}
+				&.form-weighing { 
 					.form-row {
 						flex-direction: column!important;
 						>input {
 							max-width: 100%;
-						}
+						} 
 					}
 				}	
 			}
@@ -91,3 +113,47 @@
 		}
 	} 
 }  
+
+@media screen and (max-width: 420px) {
+	.card {
+		&.card-zxc {
+			.button-group { 
+				margin-top: 10px!important;
+			}
+		}
+
+		&.card-minh {
+			> .card-content {
+				min-height: 150px; 
+				padding: 5px;
+			}
+			form.form {
+				&.form-zxc {
+					input {
+						padding: 10px 12px;
+						margin-top: 5px!important;
+						margin-bottom: 5px!important;
+						font-size: 14px;
+					}
+					.button-group {
+						margin-top: 5px!important;
+					}
+				}
+				&.form-weighing { 
+					.form-row {
+						flex-direction: column!important;
+						>input {
+							max-width: 100%;
+						} 
+						label {
+							line-height: 100%;
+						}
+					}
+				}	
+			}
+			.button-group {
+				margin-top: 27px!important;
+			}
+		}
+	} 
+}
