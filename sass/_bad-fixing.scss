@@ -70,6 +70,10 @@
 		}
 	} 
 } 
+
+.fff_header {
+	display: none;
+}
  
 @media screen and (max-width: 720px) {
 	.card {
@@ -99,11 +103,11 @@
 		display: block;
 	}
 	.fff_hide {
-		display: none;
+		display: none!important;
 	}
 
 } 
-
+ 
 @media screen and (max-width: 680px) {
 	.card-row.card-rrrow {
 		flex-direction: column!important; 

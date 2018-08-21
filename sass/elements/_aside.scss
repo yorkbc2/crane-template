@@ -86,7 +86,7 @@
   .aside-menu-element {
     @include clean-button($asideMenuBarColor);
     padding: 15px 10px;
-    min-height: 140px;
+    min-height: 100px;
     
     &.aside-menu-element-last {
       border-top: 1px solid $asideLastElementBorderColor;
