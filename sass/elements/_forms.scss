@@ -326,7 +326,7 @@
   }
 }
 
-@media screen and (max-width: $adaptiveDesignWidth) {
+@media screen and (max-width: $adaptiveDesignWidth)  {
   .lh {
     label {
       line-height: 250%!important;
@@ -338,6 +338,11 @@
       font-size: 20px;
     }
   }
+  .form-small--input {
+    max-width: 32px!important;
+    min-width: 20px!important;
+    padding: 3px;
+  }
   .form {
     &.form-small-inputs {
       label {
@@ -348,11 +353,11 @@
         font-size: 12px!important;
       }
     }
-    &.form-weighing { 
-      .form---row { 
-        flex-direction: row;
+    &.form-weighing {  
+      .form---row {  
+        flex-direction: row; 
          > *{
-          flex: 1;
+          flex: 1; 
          }
          > input {
           min-width: 100px;
@@ -373,6 +378,11 @@
         } 
       }
     }
+    label {
+      &.label-lh {
+        line-height: 100%!important;
+      }
+    }
     .form-column-and-row {
       flex-direction: row;
       >div {
@@ -381,8 +391,8 @@
       > div input,
       > div button {
         padding: 7px 10px;
-        margin: 0 !important;
+        margin: 0 !important; 
       }
-    }
+    } 
   }
 }   
