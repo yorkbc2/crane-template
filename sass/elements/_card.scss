@@ -118,9 +118,12 @@
     left: 0;
     width: 100%; 
     text-align: center; 
-    padding: 10px; 
+    padding: 10px!important; 
     margin: 0;
-    background-color: $bodyBGColor;     
+    background-color: $bodyBGColor;   
+    >button {
+      padding: 0!important;
+    }  
   } 
 }
 

@@ -11,7 +11,10 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 140px;
-  min-height: 100%; 
+  min-height: 100%;
+  height: 100%;
+  overflow-y: auto; 
+  overflow-x: hidden;
   
   
   background-color: $asideBG;
@@ -83,6 +86,7 @@
   .aside-menu-element {
     @include clean-button($asideMenuBarColor);
     padding: 15px 10px;
+    min-height: 140px;
     
     &.aside-menu-element-last {
       border-top: 1px solid $asideLastElementBorderColor;
@@ -172,10 +176,14 @@
   }
 }
 
-
-
-
-
+@media screen and (max-width: 720px) {
+  .aside {
+    .aside-elements {
+      overflow-y: auto;
+      height: 100%;
+    }
+  }
+}
 
 
 
