@@ -396,3 +396,33 @@
     } 
   }
 }   
+
+@media screen and (min-width: 639px) and (max-width: 720px) {
+  .form.form-weighing.form-weight-2 .form---row>* {
+    line-height: 150%!important;
+  }
+  .form {
+    &.form-weight-2 {
+      > .form-column-and-row {
+        flex-direction: column!important;
+        > .form-row {
+          margin-bottom: 10px!important;
+          &:last-child {
+            margin-bottom: 0px!important;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 639px) {
+  .form { 
+    &.form-weight-2 {
+      > .form-column-and-row { 
+        flex-direction: row!important;
+        
+      }
+    }
+  } 
+}

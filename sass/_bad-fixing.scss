@@ -108,7 +108,7 @@
 
 } 
  
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 639px) {
 	.card-row.card-rrrow {
 		flex-direction: column!important; 
 
@@ -178,6 +178,18 @@
 		display: none;
 	}
 
+	.vs-mobile {
+		margin: 0 5px;
+	}
+
+	.ml-mobile {
+		margin-left: 15px;
+	}
+
+	.form.form-weight-2.form label.label-lh {
+		line-height: 150%!important;
+	}
+
 	.card {
 		&.card-zxc {
 			.button-group { 
@@ -188,10 +200,10 @@
 		&.card-minh {
 			> .card-content {
 				min-height: 100px; 
-				padding: 5px;
+				padding: 5px; 
 			} 
 			form.form {
-				&.form-zxc {
+				&.form-zxc { 
 					input {
 						padding: 10px 12px;
 						margin-top: 3px!important;
