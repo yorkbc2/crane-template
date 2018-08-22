@@ -37,6 +37,18 @@
 			>.card-content{
 				min-height: 320px!important; 
 			}
+		} 
+	} 
+	.im-tired {
+		flex-direction: row!important;
+
+		label {
+			min-width: 80px!important;
+			max-width: 100px;
+		}
+		input {
+			flex: 1!important;
+			width: 80%!important;
 		}
 	}
 }
