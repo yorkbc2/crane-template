@@ -173,9 +173,18 @@
 	} 
 }  
 
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+	.form .form-row.im-tired {
+		flex-direction: row!important;
+		>* {
+			flex: 1;
+		}
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.h {
-		display: none;
+		display: none; 
 	}
 
 	.vs-mobile {
