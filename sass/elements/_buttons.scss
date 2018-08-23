@@ -19,6 +19,9 @@ button {
   background-color: $buttonBGColor;
   border: 0px;
   border-radius: $buttonBorderRadius;
+  &.offset-left {
+    margin-left: 10px;
+  }
 
   &.button-single {
     margin-bottom: 0px;
@@ -42,8 +45,8 @@ button {
     padding: 14px 15px;
     border: 1px solid $buttonPrimaryBorderColor;
     border-radius: $buttonBorderRadius; 
-    &:hover {
-      background-color: $buttonBGPrimaryColorHover;
+    &:hover { 
+      background-color: $buttonBGPrimaryColorHover; 
     }
   }
   
@@ -67,6 +70,10 @@ button {
   padding: 14px 25px;
 
   color: $linkButtonFontColor;
+
+  &.offset-left {
+    margin-left: 15px;
+  }
   
   &.link-button-upper {
     text-transform: uppercase;
