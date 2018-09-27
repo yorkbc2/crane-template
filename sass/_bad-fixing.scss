@@ -122,7 +122,8 @@
  
 @media screen and (max-width: 639px) {
 	.card-row.card-rrrow {
-		flex-direction: column!important; 
+		// flex-direction: column; 
+		display: block;
 
 		>.card {
 			margin-bottom: 5px!important;
@@ -141,7 +142,11 @@
  
 @media screen and (max-width: 530px) {
 	.card {
-		&.card-zxc { 
+		&.card-zxc {
+			> div {
+				display: block;
+				width: 100%;
+			}
 			.form-row  {
 				&.form-oof {
 					margin-top: 25px!important;
@@ -171,7 +176,12 @@
 				}
 				&.form-weighing { 
 					.form-row {
-						flex-direction: column!important;
+						display: block;
+						// flex-direction: column!important;
+						> * {
+							display: block;
+							max-width: 100%;
+						}
 						>input {
 							max-width: 100%;
 						} 
@@ -241,7 +251,7 @@
 				}
 				&.form-weighing { 
 					.form-row {
-						flex-direction: column!important;
+						// flex-direction: column!important;
 						>input {
 							max-width: 100%;
 						} 

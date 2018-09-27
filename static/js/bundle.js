@@ -1,5 +1,29 @@
 'use strict';
 
+/**
+ * Make an array from any list with length and indexed elements
+ * @return {NodeListOf|Array|any} list 
+ */
+function from(list)
+{
+	if ('from' in Array)
+	{
+		return Array.from(list);
+	}
+	else
+	{
+		var arr = new Array(list.length);
+		if (typeof list.length === 'number')
+		{
+			for (var i = 0; i < list.length; i++)
+			{
+				arr.push(list[i]);
+			}
+		}
+		return arr;
+	}
+}
+
 // Menu module
 var Menu = function () {
 	var
@@ -22,7 +46,7 @@ var Menu = function () {
 
 			if (this.trigger.length > 0) {
 				// var triggerLength = this.trigger.length;
-				var arrayFromTriggers = Array.from(this.trigger);
+				var arrayFromTriggers = from(this.trigger);
 				var self = this;
 				arrayFromTriggers.map(function (trigger) {
 					trigger.addEventListener('click', function () {
@@ -58,7 +82,8 @@ var Menu = function () {
 	return Menu;
 }();
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () 
+{
 	var m = new Menu({
 		menu: '.js-menu',
 		trigger: '.js-trigger'

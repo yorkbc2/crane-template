@@ -1,4 +1,10 @@
 // Menu module
+
+Array.prototype.from = Array.prototype.from || function ()
+{
+	console.log(this);
+};
+
 var Menu = (function () {
 	var  
 		/**
@@ -65,4 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		menu: '.js-menu',
 		trigger: '.js-trigger'
 	});
-})
+});
+
+console.log('foobar');

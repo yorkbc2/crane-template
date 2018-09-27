@@ -1,8 +1,5 @@
 .form {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   
   .form-checkbox {
     position: relative;
@@ -46,7 +43,7 @@
     }
   }
    
-  &.form-offset-left {
+  &.form-offset-left { 
     margin-left: 20px;   
   }
   
@@ -100,8 +97,8 @@
   }
 
   .form-column-and-row {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
   }
   
   .form-field {
@@ -285,7 +282,7 @@
       }
     }
     .form-row {
-      flex-direction: column;
+      // flex-direction: column;
 
       > div {
         padding-right: 0px;

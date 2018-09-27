@@ -129,9 +129,18 @@
 
 @media screen and (max-width: 480px) {
   .card-row { 
-
+    &.card-zxc {
+      .card {
+        display: block;
+        flex: none!important;
+        margin: 3px 2%;
+        min-width: 95%;
+      }
+    }
     &.card-row-reverse {
       flex-direction: column-reverse;
+
+      
 
       .card {
         margin-bottom: 0px!important;
@@ -139,8 +148,12 @@
     }
 
     &.card-weighing {
-      flex-direction: column;
-
+      // flex-direction: column;
+      // 
+      > * {
+        display: block;
+      }
+ 
       .card {
         margin-bottom: 0px!important;
         >.card-footer {

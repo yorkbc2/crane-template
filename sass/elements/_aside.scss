@@ -54,7 +54,6 @@
       @include clean-button($asideMenuBarColor, block);
       width: 100%;
       padding: 25px 0;
-      
       text-align: center;
       i.aside-button-bar {
         position: relative;
@@ -96,6 +95,7 @@
       display: block;
       margin: 10px auto;
       max-width: 50px;
+      height: 50px;
     }
     
     &.aside-menu-element-active {
@@ -130,9 +130,10 @@
       }
       .aside-button-container {
         .aside-button {
+          height: 28px;
           .aside-button-bar {
               position: absolute;   
-              top: -5px; 
+              top: 10px; 
               &:first-child {
                 transform: rotate(45deg); 
               }
