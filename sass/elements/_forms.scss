@@ -323,8 +323,26 @@
   }
 }
 
+
+@media screen and (max-width: 420px) {
+  .form {
+    .form---row {
+      &:first-child {
+        margin-bottom: 10px!important;
+      }
+    }
+    &.form-weighing {
+      .form---row {
+        input {
+          min-width: none;
+          width: 88%;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: $adaptiveDesignWidth)  {
-  .lh {
+  .lh { 
     label {
       line-height: 250%!important;
     }
@@ -400,7 +418,7 @@
   }
   .form {
     &.form-weight-2 {
-      > .form-column-and-row {
+      .form-column-and-row {
         flex-direction: column!important;
         > .form-row {
           margin-bottom: 10px!important;
@@ -422,4 +440,36 @@
       }
     }
   } 
+}
+
+@media screen and (max-width: 980px) {
+  .form {
+    .form-row {
+      &.form-row-transformed {
+        display: block;
+
+        .form-toggler {
+          display: block;
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+    }
+    .form-row-col {
+      display: block;
+      &.form-row-col-sm {
+        .flex-block {
+          margin: 0;
+          display: block;
+          flex: none;
+          > * {
+            display: block;
+            width: 100%;
+            flex: none;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
 }
