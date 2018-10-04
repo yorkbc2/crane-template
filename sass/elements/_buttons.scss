@@ -174,3 +174,16 @@ button {
     }
   }
 }
+
+@media screen and (max-width: 640px)
+{
+  .button-group
+  {
+    justify-content: flex-start;
+    .button
+    {
+      flex: none;
+      display: inline-block;
+    }
+  }
+}

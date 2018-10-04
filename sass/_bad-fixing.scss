@@ -121,6 +121,20 @@
 } 
  
 @media screen and (max-width: 639px) {
+	.settings-7
+	{
+		.form 
+		{
+			.form-row
+			{
+				display: block;
+				input 
+				{
+					width: 90%!important;
+				}
+			}
+		}
+	}
 	.card-row.card-rrrow {
 		// flex-direction: column; 
 		display: block;
