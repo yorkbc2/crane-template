@@ -125,12 +125,19 @@
 	{
 		.form 
 		{
+
+		
 			.form-row
 			{
 				display: block;
 				input 
 				{
 					width: 90%!important;
+				}
+			}
+			fieldset {
+				.form-row {
+					display: flex;
 				}
 			}
 		}
@@ -151,6 +158,7 @@
 			}
 		}
 	}
+
 } 
 
  
