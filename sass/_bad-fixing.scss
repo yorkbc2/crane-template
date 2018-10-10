@@ -111,7 +111,7 @@
 			}
 		}
 	}
-	.fff_header {
+	.fff_header { 
 		display: block;
 	}
 	.fff_hide {
@@ -119,20 +119,32 @@
 	}
 
 } 
- 
+  
 @media screen and (max-width: 639px) {
 	.settings-7
 	{
 		.form 
 		{
 
-		
+			.form-row-col {
+				&.form-row-col-sm {
+					.button-group {
+						display: flex!important;
+						button {
+							flex: 1!important;
+						}
+					}					
+				}
+			}
+
 			.form-row
 			{
-				display: block;
+
+				display: block!important;
 				input 
 				{
-					width: 90%!important;
+					width: 98%!important; 
+					padding: 15px 1%!important;
 				}
 			}
 			fieldset {
