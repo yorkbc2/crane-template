@@ -81,7 +81,18 @@
 			flex: 1!important;
 		}
 	} 
-} 
+	.settings-8 {
+		&.form {
+			.form-row {
+				display: block!important;
+				input {
+					width: 98%!important;
+					padding: 15px 1%!important;
+				}
+			}
+		}
+	}
+}  
 
 .fff_header {
 	display: none;

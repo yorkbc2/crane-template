@@ -99,6 +99,7 @@
 
       .button {
         padding: 10px 10px;
+        flex: 1!important;
       }
     }
   }
@@ -108,10 +109,10 @@
     &.card-inline {
       display: block;
     }
-    >.card-content {
+    >.card-content { 
       padding: 15px;
     }
-  }
+  } 
   .mobile-fixed-bottom {
     position: fixed;
     bottom: 0;
